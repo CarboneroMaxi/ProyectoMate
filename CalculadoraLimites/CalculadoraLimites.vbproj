@@ -72,9 +72,27 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculadoraLimiteRaizCuadrada.Designer.vb">
+      <DependentUpon>CalculadoraLimiteRaizCuadrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalculadoraLimiteRaizCuadrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcularLimite.Designer.vb">
+      <DependentUpon>CalcularLimite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalcularLimite.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb" />
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalcularLimiteDividiendo.Designer.vb">
+      <DependentUpon>frmCalcularLimiteDividiendo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalcularLimiteDividiendo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -94,8 +112,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CalculadoraLimiteRaizCuadrada.resx">
+      <DependentUpon>CalculadoraLimiteRaizCuadrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcularLimite.resx">
+      <DependentUpon>CalcularLimite.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalcularLimiteDividiendo.resx">
+      <DependentUpon>frmCalcularLimiteDividiendo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -115,6 +142,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left-arrow %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
